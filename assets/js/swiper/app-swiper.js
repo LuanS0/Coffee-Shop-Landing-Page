@@ -1,6 +1,9 @@
 const swiper = new Swiper('.swiper',{
     grabCursor: true,
     effect: 'creative',
+    autoplay: {
+      delay: 5000,
+    },
     creativeEffect: {
         prev: {
           shadow: true,
@@ -9,5 +12,6 @@ const swiper = new Swiper('.swiper',{
         next: {
           translate: ["100%", 0, 0],
         },
-    },
+      },
+      loop: true,
 });
