@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -50,7 +50,7 @@
                 <img class="img-main" src="images/complement-main-mobile.jpg" alt="Image Main">
             </picture>
         </section>
-
+    
         <section class="second-article">
             <div class="image-container">
                 <img class="image-about" src="images/about-us.jpg" alt="The Coffee House">
@@ -68,8 +68,41 @@
             </aside>
         </section>
         <section class="third-article">
-            <!--SLIDER SWIPPER-->
-        </section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-swiper">
+                            <img class="img-swiper" src="images/one.jpg" alt="Coffee One">
+                            <div class="description-swiper">
+                                <h3 class="tittle-swiper">Brownie</h3>
+                                <p class="notes-swiper">- _RED</p>
+                                <p class="origin-swiper">Origem: Fazenda Aleluia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-swiper">
+                            <img class="img-swiper" src="images/two.jpg" alt="Coffee One">
+                            <div class="description-swiper">
+                                <h3 class="tittle-swiper">Brownie</h3>
+                                <p class="notes-swiper">- _RED</p>
+                                <p class="origin-swiper">Origem: Fazenda Aleluia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-swiper">
+                            <img class="img-swiper" src="images/three.jpg" alt="Coffee One">
+                            <div class="description-swiper">
+                                <h3 class="tittle-swiper">Brownie</h3>
+                                <p class="notes-swiper">- _RED</p>
+                                <p class="origin-swiper">Origem: Fazenda Aleluia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
         <section class="plus-article">
             <aside>
                 <h2 class="plus-subtittle">COFFEE AND LIFE</h2>
@@ -170,6 +203,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper/app-swiper.js"></script>
 </body>
 </html>
 

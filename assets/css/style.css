@@ -32,6 +32,11 @@
     box-sizing: border-box;
 }
 
+.smooth-wrapper{
+    scroll-snap-type: y mandatory;
+}
+
+
 /* -------- MAIN HEADER -------- */
 
 header{
@@ -201,7 +206,6 @@ nav{
     background-color: var(--bg-about-us);
     display: flex;
     flex-direction: column;
-    max-height: var(--h-about-us-desk);
 }
 
 .image-container{
@@ -222,6 +226,7 @@ nav{
 
 .third-article{
     height:  var(--h-main);
+    overflow: hidden;
 }
 
 .fourth-article{
@@ -399,6 +404,73 @@ footer{
     gap: .5rem;
 }
 
+.swiper{
+    background-image: url('../../images/bg-main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;   
+}
+
+.swiper-wrapper{
+    max-width: 100vw;
+    height: 500px;
+}
+
+.swiper-slide{
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-swiper{
+    display: flex;
+    position: relative;
+}
+
+.description-swiper{
+    display: none;
+}
+
+.content-swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+.img-swiper{
+    top: 0;
+}
+
+.description-swiper{
+    position: absolute;
+}
+
+.tittle-swiper{
+    color: var(--white);
+    font-size: 26pt;
+    font-family: var(--roboto);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    
+}
+.notes-swiper{
+    color: var(--white);
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-family: var(--mountserrat);
+    font-weight: 600;
+}
+
+.origin-swiper{
+    color: var(--white);
+    font-size: 10pt;
+    font-family: var(--mountserrat);
+    font-weight: 600
+}
+
+*/
 
 @media (min-width:768px) {
     nav{
@@ -490,6 +562,10 @@ footer{
 
     .top-footer{
         flex-direction: row;
+    }
+
+    .second-article{
+        max-height: var(--h-about-us-desk);
     }
 }
 
