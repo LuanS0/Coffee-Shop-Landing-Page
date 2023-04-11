@@ -223,7 +223,7 @@ nav{
 
 
 .third-article{
-    height:  var(--h-main);
+    max-height:  var(--h-main);
     overflow: hidden;
 }
 
@@ -402,74 +402,6 @@ footer{
     gap: .5rem;
 }
 
-.swiper{
-    background-image: url('../../images/bg-main.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;   
-}
-
-.swiper-wrapper{
-    max-width: 100vw;
-    height: 500px;
-}
-
-.swiper-slide{
-    height: 100%;
-    overflow: hidden;
-}
-
-.content-swiper{
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.description-swiper{
-    display: none;
-}
-
-.image-swiper{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/*
-.img-swiper{
-    top: 0;
-}
-
-.description-swiper{
-    position: absolute;
-}
-
-.tittle-swiper{
-    color: var(--white);
-    font-size: 26pt;
-    font-family: var(--roboto);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    
-}
-.notes-swiper{
-    color: var(--white);
-    font-size: 16pt;
-    text-transform: uppercase;
-    font-family: var(--mountserrat);
-    font-weight: 600;
-}
-
-.origin-swiper{
-    color: var(--white);
-    font-size: 10pt;
-    font-family: var(--mountserrat);
-    font-weight: 600
-}
-
-*/
 
 @media (min-width:768px) {
     nav{
@@ -567,9 +499,6 @@ footer{
         max-height: var(--h-about-us-desk);
     }
 
-    .image-swiper{
-        max-height: 500px;
-    }
 
 
     /* ADICIONAR AQUI O CONTEUDO DO SWIPER */

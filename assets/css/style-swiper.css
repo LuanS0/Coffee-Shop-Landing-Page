@@ -1,0 +1,25 @@
+.swiper {
+    width: auto;
+    flex-shrink: 0;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 750px;
+}
+
+.swiper-wrapper{
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.swiper-slide{
+    max-width: 300px;
+
+}
+
+.img-slide{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
