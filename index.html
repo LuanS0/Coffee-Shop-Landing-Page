@@ -12,7 +12,9 @@
 <body>
     <header>
         <div class="nav-header">
-            <img class="logo" src="images/logo.png" alt="Logo">
+            <div class="header-main">
+                <img class="logo" src="images/logo.png" alt="Logo">
+            </div>
             <nav>
                 <ul class="nav-bar">
                     <li class="nav-items"><a href="">Home</a></li>
@@ -21,18 +23,18 @@
                     <li class="nav-items"><a href="">About</a></li>
                     <li class="nav-items"><a href="">Contact</a></li>
                 </ul>
-                <div class="nav-control">
-                    <label for="Image">
-                        <img class="search" src="images/search.svg" alt="Search Icon">
-                    </label>
-                    <label for="Image">
-                        <img class="user" src="images/user.svg" alt="User Icon">
-                    </label>
-                </div>
+                <div class="toggle-hamburger">
+                    <div class="nav-control">
+                        <label for="Image">
+                            <img class="search icon-menu" src="images/search.svg" alt="Search Icon">
+                        </label>
+                        <label for="Image">
+                            <img class="user icon-menu" src="images/user.svg" alt="User Icon">
+                        </label>
+                    </div>
+                    <img class="icon-toggle" src="images/hamburger.png" alt="hamburger">
+                </div>  
             </nav>
-            <div class="nav-hamburger">
-                <img class="hamburger" src="images/hamburger.png" alt="hamburger">
-            </div>
         </div>
     </header>
     <main>
@@ -183,6 +185,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper/app-swiper.js"></script>
+    <script src="assets/js/toggle/app.js"></script>
 </body>
 </html>
 
