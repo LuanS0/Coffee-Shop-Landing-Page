@@ -30,8 +30,7 @@
     border-radius: 25px;
 }
 
-.swiper-slide-next,
-.swiper-slide-prev{
+.swiper-slide:not(.swiper-slide-active){
     filter: blur(4px);
 }
 

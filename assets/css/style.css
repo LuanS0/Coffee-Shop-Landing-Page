@@ -16,7 +16,7 @@
     --h-about-us-mob: calc(100vh * 0.28);
     --h-about-us-desk: calc(100vh * 0.5);
     /*TITTLE FONT-SIZE*/
-    --fs-min-tittle: calc(32px + (32-16)*(100vw - 320px)/(1440-320));
+    --fs-min-tittle: calc(32px + (32-16)*(100vw - 320px)/(1252-320));
 
     /*SUBTITTLE FONT-SIZE*/
     --fs-min-subtittle: calc(20px + (20-16)*(100vw - 320px)/(320-768));
@@ -111,9 +111,29 @@ nav{
     text-decoration: none;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
+
+    transition: all .3s ease-in-out;
+}
+
+.nav-items a::after{
+    content: '';
+    width: 0%;
+    transform: translateX(0%);
+    height: 2px;
+    background-color: var(--green);
+    transition: all .3s ease-in-out;
+}
+
+.nav-items a:hover{
+    color: var(--green);
+}
+
+.nav-items a:hover::after{
     width: 100%;
 }
 
@@ -534,7 +554,7 @@ footer {
     /* ADICIONAR AQUI O CONTEUDO DO SWIPER */
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 2536px) {
 
     .first-article,
     .second-article,
@@ -553,5 +573,9 @@ footer {
     .img-main,
     .first-article {
         height: 768px;
+    }
+
+    .tittle{
+        font-size: calc(var(--fs-min-tittle)*0.7);
     }
 }
